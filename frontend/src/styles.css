@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary-dark: #215A3D;
+  --color-primary-light: #7CB518;
+  --color-primary-white: #FFFFFF;
+  --color-secondary-orange: #F7931E;
+  --color-secondary-yellow: #FDD835;
+  --color-secondary-gray: #BDBDBD;
+}
+
+@layer base {
+  html {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  body {
+    @apply bg-white dark:bg-gray-900 text-[#333333] dark:text-[#CCCCCC] text-base;
+  }
+
+  h1 {
+    @apply text-[48px] font-bold text-[#215A3D] dark:text-[#A5D720];
+  }
+
+  h2 {
+    @apply text-[36px] font-semibold text-[#215A3D] dark:text-[#A5D720];
+  }
+
+  h3 {
+    @apply text-[28px] font-medium text-[#333333] dark:text-white;
+  }
+
+  p {
+    @apply text-base font-normal;
+  }
+
+  .text-ui {
+    @apply text-sm font-light text-[#666666] dark:text-[#AAAAAA];
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#215A3D] hover:bg-[#1a4730] text-white font-bold py-2 px-4 rounded transition duration-300;
+  }
+  
+  .btn-secondary {
+    @apply bg-[#7CB518] hover:bg-[#6a9e15] text-white font-bold py-2 px-4 rounded transition duration-300;
+  }
+
+  .btn-accent {
+    @apply bg-[#F7931E] hover:bg-[#e58518] text-white font-bold py-2 px-4 rounded transition duration-300;
+  }
+
+  .nav-link {
+    @apply relative px-3 py-2 text-lg font-medium text-[#215A3D] dark:text-gray-300 hover:text-[#7CB518] dark:hover:text-[#7CB518] transition-colors duration-300;
+  }
+
+  .nav-link::after {
+    @apply content-[''] absolute bottom-0 left-0 w-0 h-0.5 bg-[#7CB518] transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .nav-link.active {
+    @apply text-[#7CB518] dark:text-[#7CB518];
+  }
+
+  .nav-link.active::after {
+    @apply w-full bg-[#7CB518];
+  }
+
+  .text-primary {
+    @apply text-[#215A3D];
+  }
+
+  .text-secondary {
+    @apply text-[#7CB518];
+  }
+
+  .text-accent {
+    @apply text-[#F7931E];
+  }
+
+  .bg-primary {
+    @apply bg-[#215A3D];
+  }
+
+  .bg-secondary {
+    @apply bg-[#7CB518];
+  }
+
+  .bg-accent {
+    @apply bg-[#F7931E];
+  }
+}
+
+/* Reset global */
+html, body, app-root {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+} 
