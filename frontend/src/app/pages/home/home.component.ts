@@ -36,11 +36,11 @@ interface Translations {
       <section class="relative h-[600px] w-full p-0 m-0">
         <div class="absolute inset-0 p-0 m-0">
           <img 
-            src="/assets/images/portada.jpg" 
-            alt="Fruits and vegetables" 
+            src="/assets/images/portada.png" 
+            alt="Fruits" 
             class="w-full h-full object-cover p-0 m-0"
           >
-          <div class="absolute inset-0 bg-[#215A3D] bg-opacity-10 p-0 m-0"></div>
+          <div class="absolute inset-0 bg-[#215A3D] bg-opacity-0 p-0 m-0"></div>
         </div>
         
         <div class="relative h-full flex items-center justify-center text-center p-0 m-0">
