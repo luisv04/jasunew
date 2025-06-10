@@ -45,10 +45,10 @@ interface Translations {
         
         <div class="relative h-full flex items-center justify-center text-center p-0 m-0">
           <div class="max-w-3xl">
-            <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 text-[#215A3D] dark:text-[#215A3D]">
               {{ translations[currentLanguage].hero.title }}
             </h1>
-            <p class="text-xl text-white mb-8">
+            <p class="text-xl mb-8 text-[#215A3D] dark:text-[#215A3D]">
               {{ translations[currentLanguage].hero.subtitle }}
             </p>
             <button 
