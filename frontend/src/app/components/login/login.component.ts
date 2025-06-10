@@ -12,7 +12,7 @@ import { LanguageService } from '../../services/language.service';
         <button (click)="close()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 dark:hover:text-white text-2xl focus:outline-none" aria-label="Cerrar">
           &times;
         </button>
-        <h2 class="mt-2 mb-6 text-3xl font-extrabold text-center" [style.color]="'#215A3D'">
+        <h2 class="mt-2 mb-6 text-3xl font-extrabold text-center" dark:text-white>
           {{ translations[currentLanguage].title }}
         </h2>
         <!-- Botón de Google -->
